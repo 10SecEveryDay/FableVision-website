@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "fablevision",
+	"version": "${version}",
+	"name": "FableVision",
+	"description": "Custom-spawn Seed Finder (Create World → ✨): describe the spawn you want, or pick a structure + biome, and real seeds are searched with the game's own world-gen — you spawn normally, nothing is placed. Schematic auto-builder (/build): .schem/.litematic/.schematic/.nbt with textured ghost previews, paid block-by-block from a real chest — survival-fair, singleplayer only. Ask AI about your screen (press G) with your own Gemini/GPT/Claude/Groq key. Plus crystal PvP vision tweaks (low fire/shield, fullbright, no explosion particles, AppleSkin-style food HUD) and LAN + Bedrock hosting via Geyser (/client lan). /client opens the menu.",
+	"authors": [
+		"10SecEveryDay"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/fablevision/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.fablevision.client.FableVisionClient",
+			"com.tensec.aiscreen.AiScreenClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "fablevision.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

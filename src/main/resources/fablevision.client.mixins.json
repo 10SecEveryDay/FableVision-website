@@ -1,0 +1,19 @@
+{
+	"required": true,
+	"package": "com.fablevision.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"EditWorldScreenMixin",
+		"GuiMixin",
+		"ItemInHandRendererMixin",
+		"LightmapRenderStateExtractorMixin",
+		"ParticleEngineMixin",
+		"ScreenEffectRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
